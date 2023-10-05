@@ -19,7 +19,12 @@ function App() {
   }
 
   let substract =() => {
-    setCounter(counter=counter-1);
+    if (counter>0){
+      setCounter(counter=counter-1);
+    }
+    else{
+      alert("Last limit of Floor value of counter is 0")
+    }
   }
   return (
     <>
